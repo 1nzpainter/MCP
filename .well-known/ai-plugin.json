@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "My Painting Club Lessons",
+  "name_for_model": "mpc_painting_lessons",
+  "description_for_human": "Search transcribed painting lessons from mypaintingclub.com — colour mixing, edges, composition, value, brushwork, oils and acrylics. Every result links to the lesson page and the exact video moment.",
+  "description_for_model": "Search the mypaintingclub.com lesson knowledge base with a natural-language question. Returns up to top_k ranked answers from real transcribed lesson content. Each result includes: answer text, lesson title, sales_page_url (mypaintingclub.com lesson page), start_time_seconds, end_time_seconds, and vimeo_deep_link (a https://vimeo.com/<id>#t=<N>s URL that seeks to the cited moment). Use this whenever a user asks a painting technique question about colour, edges, composition, value, brushwork, or oils/acrylics.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://mypaintingclub.com/kb/openapi.json"
+  },
+  "logo_url": "https://mypaintingclub.com/app/themes/mpc2017/images/logo-mpc-icon.png",
+  "contact_email": "support@mypaintingclub.com",
+  "legal_info_url": "https://mypaintingclub.com/help"
+}
