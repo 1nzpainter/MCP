@@ -1,5 +1,7 @@
 # My Painting Club — Painting Lesson Knowledge Base (MCP Server)
 
+[![smithery badge](https://smithery.ai/badge/mypaintingclub/painting_lessons)](https://smithery.ai/servers/mypaintingclub/painting_lessons)
+
 A remote MCP (Model Context Protocol) server that lets AI agents search transcribed painting lessons from [mypaintingclub.com](https://mypaintingclub.com).
 
 ## What it does
@@ -66,5 +68,6 @@ Add `https://mypaintingclub.com/kb/mcp` as a Streamable HTTP server.
 ## Links
 
 - [mypaintingclub.com](https://mypaintingclub.com) — the full painting school
+- [Smithery listing](https://smithery.ai/servers/mypaintingclub/painting_lessons)
 - [/kb/docs](https://mypaintingclub.com/kb/docs) — API documentation
 - [support@mypaintingclub.com](mailto:support@mypaintingclub.com)
