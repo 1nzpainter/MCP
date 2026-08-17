@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "mpc-painting-lessons": {
+      "url": "https://mypaintingclub.com/kb/mcp",
+      "type": "streamable-http",
+      "name": "My Painting Club — Painting Lesson Knowledge Base",
+      "description": "Search transcribed painting lessons from mypaintingclub.com. Covers colour mixing, edges, composition, value, brushwork, oils and acrylics. Every answer cites the lesson page and the exact video timestamp.",
+      "version": "1.0.0",
+      "tools": [
+        {
+          "name": "search_painting_lessons",
+          "description": "Search painting lesson content with a natural-language question. Returns ranked answers with lesson page URL and Vimeo timestamp deep link."
+        }
+      ],
+      "rateLimit": "30 requests/minute per IP; 500 queries/day global cap (resets midnight UTC)",
+      "docs": "https://mypaintingclub.com/kb/docs",
+      "health": "https://mypaintingclub.com/kb/health"
+    }
+  }
+}
