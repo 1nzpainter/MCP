@@ -1,0 +1,51 @@
+# smithery.yaml — MCP server listing for smithery.ai
+# Lists the My Painting Club lesson knowledge base as a discoverable
+# remote MCP tool. Connect via Streamable HTTP; no credentials required.
+
+name: mpc-painting-lessons
+displayName: "My Painting Club — Painting Lesson Knowledge Base"
+description: |
+  Search transcribed painting lessons from mypaintingclub.com.
+  Covers colour mixing, edges, composition, value, brushwork,
+  and painting techniques for oils and acrylics.
+  Every answer cites the lesson page URL and the exact Vimeo
+  video timestamp so agents can link members to the right moment.
+version: "1.0.0"
+license: proprietary
+
+keywords:
+  - painting
+  - art
+  - colour mixing
+  - acrylic painting
+  - oil painting
+  - brushwork
+  - edges
+  - composition
+  - value
+  - art education
+
+server:
+  type: http
+  url: https://mypaintingclub.com/kb/mcp
+  configSchema: {}   # no credentials required
+
+tools:
+  - name: search_painting_lessons
+    description: >
+      Search the mypaintingclub.com lesson knowledge base with a natural-language
+      question. Returns up to top_k answers from real lesson content, each with
+      the answer text, lesson title, sales-page URL, and a Vimeo deep link
+      (timestamp URL) pointing to the exact moment in the video.
+    inputSchema:
+      type: object
+      properties:
+        question:
+          type: string
+          description: The painting technique question to search for.
+        top_k:
+          type: integer
+          description: Maximum number of results (1–20). Default 5.
+          default: 5
+      required:
+        - question
